@@ -1,0 +1,17 @@
+{
+  "name": "playwright-cucumber",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "cucumber-js",
+     "test:all": "cucumber-js features/**/*.feature --require-module ts-node/register --require support/hooks.ts --require steps/**/*.ts --publish-quiet",
+    "test:parallel": "cucumber-js features/**/*.feature --require-module ts-node/register --require support/hooks.ts --require steps/**/*.ts --publish-quiet --parallel 4"
+  
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@playwright/test": "^1.55.0",
+    "playwright": "^1.55.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "default": {
+    "require": [
+      "steps/**/*.ts",
+      "support/hooks.ts"
+    ],
+    "requireModule": ["ts-node/register"],
+    
+    "format": ["progress"]
+  }
+}
